@@ -1,0 +1,829 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "slbpocworkspace-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "call-data",
+				"fileSystem": "teams-data"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"@odata.context": {
+					"type": "string"
+				},
+				"id": {
+					"type": "string"
+				},
+				"version": {
+					"type": "integer"
+				},
+				"type": {
+					"type": "string"
+				},
+				"modalities": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"lastModifiedDateTime": {
+					"type": "string"
+				},
+				"startDateTime": {
+					"type": "string"
+				},
+				"endDateTime": {
+					"type": "string"
+				},
+				"joinWebUrl": {
+					"type": "string"
+				},
+				"organizer": {
+					"type": "object",
+					"properties": {
+						"acsUser": {
+							"type": "null"
+						},
+						"spoolUser": {
+							"type": "null"
+						},
+						"phone": {
+							"type": "object",
+							"properties": {
+								"id": {
+									"type": "string"
+								},
+								"displayName": {
+									"type": "null"
+								},
+								"tenantId": {
+									"type": "null"
+								}
+							}
+						},
+						"guest": {
+							"type": "null"
+						},
+						"encrypted": {
+							"type": "null"
+						},
+						"onPremises": {
+							"type": "null"
+						},
+						"acsApplicationInstance": {
+							"type": "null"
+						},
+						"spoolApplicationInstance": {
+							"type": "null"
+						},
+						"applicationInstance": {
+							"type": "null"
+						},
+						"application": {
+							"type": "null"
+						},
+						"device": {
+							"type": "null"
+						},
+						"user": {
+							"type": "object",
+							"properties": {
+								"id": {
+									"type": "string"
+								},
+								"displayName": {
+									"type": "string"
+								},
+								"tenantId": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"participants": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"acsUser": {
+								"type": "null"
+							},
+							"spoolUser": {
+								"type": "null"
+							},
+							"phone": {
+								"type": "null"
+							},
+							"guest": {
+								"type": "null"
+							},
+							"encrypted": {
+								"type": "null"
+							},
+							"onPremises": {
+								"type": "null"
+							},
+							"acsApplicationInstance": {
+								"type": "null"
+							},
+							"spoolApplicationInstance": {
+								"type": "null"
+							},
+							"applicationInstance": {
+								"type": "null"
+							},
+							"application": {
+								"type": "null"
+							},
+							"device": {
+								"type": "null"
+							},
+							"user": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "string"
+									},
+									"displayName": {
+										"type": "string"
+									},
+									"tenantId": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"sessions@odata.context": {
+					"type": "string"
+				},
+				"sessions": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "string"
+							},
+							"modalities": {
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
+							},
+							"startDateTime": {
+								"type": "string"
+							},
+							"endDateTime": {
+								"type": "string"
+							},
+							"failureInfo": {
+								"type": "null"
+							},
+							"caller": {
+								"type": "object",
+								"properties": {
+									"@odata.type": {
+										"type": "string"
+									},
+									"feedback": {
+										"type": "null"
+									},
+									"userAgent": {
+										"type": "object",
+										"properties": {
+											"@odata.type": {
+												"type": "string"
+											},
+											"headerValue": {
+												"type": "string"
+											},
+											"applicationVersion": {
+												"type": "null"
+											},
+											"platform": {
+												"type": "string"
+											},
+											"productFamily": {
+												"type": "string"
+											}
+										}
+									},
+									"identity": {
+										"type": "object",
+										"properties": {
+											"acsUser": {
+												"type": "null"
+											},
+											"spoolUser": {
+												"type": "null"
+											},
+											"phone": {
+												"type": "null"
+											},
+											"guest": {
+												"type": "null"
+											},
+											"encrypted": {
+												"type": "null"
+											},
+											"onPremises": {
+												"type": "null"
+											},
+											"acsApplicationInstance": {
+												"type": "null"
+											},
+											"spoolApplicationInstance": {
+												"type": "null"
+											},
+											"applicationInstance": {
+												"type": "null"
+											},
+											"application": {
+												"type": "null"
+											},
+											"device": {
+												"type": "null"
+											},
+											"user": {
+												"type": "object",
+												"properties": {
+													"id": {
+														"type": "string"
+													},
+													"displayName": {
+														"type": "string"
+													},
+													"tenantId": {
+														"type": "string"
+													}
+												}
+											}
+										}
+									}
+								}
+							},
+							"callee": {
+								"type": "object",
+								"properties": {
+									"@odata.type": {
+										"type": "string"
+									},
+									"userAgent": {
+										"type": "object",
+										"properties": {
+											"@odata.type": {
+												"type": "string"
+											},
+											"headerValue": {
+												"type": "null"
+											},
+											"applicationVersion": {
+												"type": "null"
+											},
+											"platform": {
+												"type": "string"
+											},
+											"productFamily": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							},
+							"segments@odata.context": {
+								"type": "string"
+							},
+							"segments": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"id": {
+											"type": "string"
+										},
+										"startDateTime": {
+											"type": "string"
+										},
+										"endDateTime": {
+											"type": "string"
+										},
+										"failureInfo": {
+											"type": "null"
+										},
+										"caller": {
+											"type": "object",
+											"properties": {
+												"@odata.type": {
+													"type": "string"
+												},
+												"feedback": {
+													"type": "null"
+												},
+												"userAgent": {
+													"type": "object",
+													"properties": {
+														"@odata.type": {
+															"type": "string"
+														},
+														"headerValue": {
+															"type": "string"
+														},
+														"applicationVersion": {
+															"type": "null"
+														},
+														"platform": {
+															"type": "string"
+														},
+														"productFamily": {
+															"type": "string"
+														}
+													}
+												},
+												"identity": {
+													"type": "object",
+													"properties": {
+														"acsUser": {
+															"type": "null"
+														},
+														"spoolUser": {
+															"type": "null"
+														},
+														"phone": {
+															"type": "null"
+														},
+														"guest": {
+															"type": "null"
+														},
+														"encrypted": {
+															"type": "null"
+														},
+														"onPremises": {
+															"type": "null"
+														},
+														"acsApplicationInstance": {
+															"type": "null"
+														},
+														"spoolApplicationInstance": {
+															"type": "null"
+														},
+														"applicationInstance": {
+															"type": "null"
+														},
+														"application": {
+															"type": "null"
+														},
+														"device": {
+															"type": "null"
+														},
+														"user": {
+															"type": "object",
+															"properties": {
+																"id": {
+																	"type": "string"
+																},
+																"displayName": {
+																	"type": "string"
+																},
+																"tenantId": {
+																	"type": "string"
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"callee": {
+											"type": "object",
+											"properties": {
+												"@odata.type": {
+													"type": "string"
+												},
+												"userAgent": {
+													"type": "object",
+													"properties": {
+														"@odata.type": {
+															"type": "string"
+														},
+														"headerValue": {
+															"type": "null"
+														},
+														"applicationVersion": {
+															"type": "null"
+														},
+														"platform": {
+															"type": "string"
+														},
+														"productFamily": {
+															"type": "string"
+														}
+													}
+												}
+											}
+										},
+										"media": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"label": {
+														"type": "string"
+													},
+													"callerNetwork": {
+														"type": "object",
+														"properties": {
+															"ipAddress": {
+																"type": "string"
+															},
+															"subnet": {
+																"type": "string"
+															},
+															"linkSpeed": {
+																"type": "integer"
+															},
+															"connectionType": {
+																"type": "string"
+															},
+															"port": {
+																"type": "integer"
+															},
+															"reflexiveIPAddress": {
+																"type": "string"
+															},
+															"relayIPAddress": {
+																"type": "string"
+															},
+															"relayPort": {
+																"type": "integer"
+															},
+															"macAddress": {
+																"type": "null"
+															},
+															"wifiMicrosoftDriver": {
+																"type": "string"
+															},
+															"wifiMicrosoftDriverVersion": {
+																"type": "string"
+															},
+															"wifiVendorDriver": {
+																"type": "string"
+															},
+															"wifiVendorDriverVersion": {
+																"type": "string"
+															},
+															"wifiChannel": {
+																"type": "integer"
+															},
+															"wifiBand": {
+																"type": "string"
+															},
+															"basicServiceSetIdentifier": {
+																"type": "string"
+															},
+															"wifiRadioType": {
+																"type": "string"
+															},
+															"wifiSignalStrength": {
+																"type": "integer"
+															},
+															"wifiBatteryCharge": {
+																"type": "integer"
+															},
+															"dnsSuffix": {
+																"type": "string"
+															},
+															"sentQualityEventRatio": {
+																"type": "integer"
+															},
+															"receivedQualityEventRatio": {
+																"type": "integer"
+															},
+															"delayEventRatio": {
+																"type": "integer"
+															},
+															"bandwidthLowEventRatio": {
+																"type": "null"
+															}
+														}
+													},
+													"calleeNetwork": {
+														"type": "object",
+														"properties": {
+															"ipAddress": {
+																"type": "string"
+															},
+															"subnet": {
+																"type": "string"
+															},
+															"linkSpeed": {
+																"type": "integer"
+															},
+															"connectionType": {
+																"type": "string"
+															},
+															"port": {
+																"type": "integer"
+															},
+															"reflexiveIPAddress": {
+																"type": "string"
+															},
+															"relayIPAddress": {
+																"type": "null"
+															},
+															"relayPort": {
+																"type": "null"
+															},
+															"macAddress": {
+																"type": "null"
+															},
+															"wifiMicrosoftDriver": {
+																"type": "null"
+															},
+															"wifiMicrosoftDriverVersion": {
+																"type": "null"
+															},
+															"wifiVendorDriver": {
+																"type": "null"
+															},
+															"wifiVendorDriverVersion": {
+																"type": "null"
+															},
+															"wifiChannel": {
+																"type": "null"
+															},
+															"wifiBand": {
+																"type": "string"
+															},
+															"basicServiceSetIdentifier": {
+																"type": "null"
+															},
+															"wifiRadioType": {
+																"type": "string"
+															},
+															"wifiSignalStrength": {
+																"type": "null"
+															},
+															"wifiBatteryCharge": {
+																"type": "null"
+															},
+															"dnsSuffix": {
+																"type": "null"
+															},
+															"sentQualityEventRatio": {
+																"type": "null"
+															},
+															"receivedQualityEventRatio": {
+																"type": "null"
+															},
+															"delayEventRatio": {
+																"type": "null"
+															},
+															"bandwidthLowEventRatio": {
+																"type": "null"
+															}
+														}
+													},
+													"callerDevice": {
+														"type": "object",
+														"properties": {
+															"captureDeviceName": {
+																"type": "string"
+															},
+															"captureDeviceDriver": {
+																"type": "string"
+															},
+															"renderDeviceName": {
+																"type": "string"
+															},
+															"renderDeviceDriver": {
+																"type": "string"
+															},
+															"sentSignalLevel": {
+																"type": "null"
+															},
+															"receivedSignalLevel": {
+																"type": "null"
+															},
+															"sentNoiseLevel": {
+																"type": "null"
+															},
+															"receivedNoiseLevel": {
+																"type": "null"
+															},
+															"initialSignalLevelRootMeanSquare": {
+																"type": "null"
+															},
+															"cpuInsufficentEventRatio": {
+																"type": "integer"
+															},
+															"renderNotFunctioningEventRatio": {
+																"type": "integer"
+															},
+															"captureNotFunctioningEventRatio": {
+																"type": "integer"
+															},
+															"deviceGlitchEventRatio": {
+																"type": "integer"
+															},
+															"lowSpeechToNoiseEventRatio": {
+																"type": "integer"
+															},
+															"lowSpeechLevelEventRatio": {
+																"type": "integer"
+															},
+															"deviceClippingEventRatio": {
+																"type": "integer"
+															},
+															"howlingEventCount": {
+																"type": "integer"
+															},
+															"renderZeroVolumeEventRatio": {
+																"type": "integer"
+															},
+															"renderMuteEventRatio": {
+																"type": "integer"
+															},
+															"micGlitchRate": {
+																"type": "null"
+															},
+															"speakerGlitchRate": {
+																"type": "null"
+															}
+														}
+													},
+													"calleeDevice": {
+														"type": "object",
+														"properties": {
+															"captureDeviceName": {
+																"type": "null"
+															},
+															"captureDeviceDriver": {
+																"type": "null"
+															},
+															"renderDeviceName": {
+																"type": "null"
+															},
+															"renderDeviceDriver": {
+																"type": "null"
+															},
+															"sentSignalLevel": {
+																"type": "null"
+															},
+															"receivedSignalLevel": {
+																"type": "null"
+															},
+															"sentNoiseLevel": {
+																"type": "null"
+															},
+															"receivedNoiseLevel": {
+																"type": "null"
+															},
+															"initialSignalLevelRootMeanSquare": {
+																"type": "null"
+															},
+															"cpuInsufficentEventRatio": {
+																"type": "null"
+															},
+															"renderNotFunctioningEventRatio": {
+																"type": "null"
+															},
+															"captureNotFunctioningEventRatio": {
+																"type": "null"
+															},
+															"deviceGlitchEventRatio": {
+																"type": "null"
+															},
+															"lowSpeechToNoiseEventRatio": {
+																"type": "null"
+															},
+															"lowSpeechLevelEventRatio": {
+																"type": "null"
+															},
+															"deviceClippingEventRatio": {
+																"type": "null"
+															},
+															"howlingEventCount": {
+																"type": "integer"
+															},
+															"renderZeroVolumeEventRatio": {
+																"type": "null"
+															},
+															"renderMuteEventRatio": {
+																"type": "null"
+															},
+															"micGlitchRate": {
+																"type": "null"
+															},
+															"speakerGlitchRate": {
+																"type": "null"
+															}
+														}
+													},
+													"streams": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"streamId": {
+																	"type": "string"
+																},
+																"startDateTime": {
+																	"type": "null"
+																},
+																"endDateTime": {
+																	"type": "null"
+																},
+																"streamDirection": {
+																	"type": "string"
+																},
+																"averageAudioDegradation": {
+																	"type": "null"
+																},
+																"averageJitter": {
+																	"type": "string"
+																},
+																"maxJitter": {
+																	"type": "string"
+																},
+																"averagePacketLossRate": {
+																	"type": "integer"
+																},
+																"maxPacketLossRate": {
+																	"type": "integer"
+																},
+																"averageRatioOfConcealedSamples": {
+																	"type": "null"
+																},
+																"maxRatioOfConcealedSamples": {
+																	"type": "null"
+																},
+																"averageRoundTripTime": {
+																	"type": "null"
+																},
+																"maxRoundTripTime": {
+																	"type": "null"
+																},
+																"packetUtilization": {
+																	"type": "integer"
+																},
+																"averageBandwidthEstimate": {
+																	"type": "integer"
+																},
+																"wasMediaBypassed": {
+																	"type": "null"
+																},
+																"postForwardErrorCorrectionPacketLossRate": {
+																	"type": "null"
+																},
+																"averageVideoFrameLossPercentage": {
+																	"type": "null"
+																},
+																"averageReceivedFrameRate": {
+																	"type": "null"
+																},
+																"lowFrameRateRatio": {
+																	"type": "null"
+																},
+																"averageVideoPacketLossRate": {
+																	"type": "null"
+																},
+																"averageVideoFrameRate": {
+																	"type": "null"
+																},
+																"lowVideoProcessingCapabilityRatio": {
+																	"type": "null"
+																},
+																"averageAudioNetworkJitter": {
+																	"type": "string"
+																},
+																"maxAudioNetworkJitter": {
+																	"type": "string"
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
