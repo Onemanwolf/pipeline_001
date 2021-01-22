@@ -5,11 +5,20 @@
 		"workspaceName": {
 			"value": "slbpocworkspace"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"CosmosDb1_connectionString": {
+			"value": ""
+		},
 		"slbpocworkspace-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
 		"slbtmdata_connectionString": {
 			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://slbdatalake.dfs.core.windows.net"
 		},
 		"slbpocworkspace-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://slbdatalake.dfs.core.windows.net"
