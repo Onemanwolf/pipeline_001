@@ -19,6 +19,12 @@
 						"referenceName": "slbDataflow",
 						"type": "DataFlowReference"
 					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "slbpocworkspace-WorkspaceDefaultStorage",
+							"type": "LinkedServiceReference"
+						}
+					},
 					"compute": {
 						"coreCount": 8,
 						"computeType": "General"
