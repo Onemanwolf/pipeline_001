@@ -1,0 +1,24 @@
+{
+	"name": "Trigger 2",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "slbpipline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 5,
+				"startTime": "2021-01-22T01:00:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
