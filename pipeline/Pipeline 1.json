@@ -20,11 +20,7 @@
 						"type": "DataFlowReference"
 					},
 					"staging": {
-						"linkedService": {
-							"referenceName": "slbpocworkspace-WorkspaceDefaultStorage",
-							"type": "LinkedServiceReference"
-						},
-						"folderPath": "staging/stagingdata"
+						"folderPath": ""
 					},
 					"compute": {
 						"coreCount": 8,
