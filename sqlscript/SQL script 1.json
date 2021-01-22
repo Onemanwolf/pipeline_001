@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "id",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "slbdatapool",
+				"databaseName": "slbdatapool"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}
